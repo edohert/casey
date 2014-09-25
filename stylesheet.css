@@ -1,0 +1,96 @@
+html {
+    background-color: 
+}
+
+#wrapper {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    width: 960px;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 600px;
+}
+
+#heading {
+    float: left;
+    color: black;
+}
+
+.horizontalLine {
+    border-top: thin solid black;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#heading a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+#nav {
+    list-style-type: none;
+    display:table;
+    width: 80%;
+    margin-left: -45px
+}
+
+nav li {
+    display: inline;
+    display:table-cell;
+    height:30px;   
+    padding:10px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px
+}
+
+nav li a{
+    color: #B8B8B8;
+}
+
+nav li a:visited {
+    text-decoration: none;
+    color: #B8B8B8
+}
+nav li a:hover {
+    text-decoration: none;
+    color: #4f4f4f;
+}
+
+#indexPageContent{
+    width: 960px;
+    height: 400px;
+    top: 100px;
+    border: thin solid red;
+}
+
+.paintings{
+    display: inline-block;
+    padding: 10px;
+    padding-bottom: 10px
+}
+
+#footer{
+    background-color:#B8B8B8;
+    width:100%;
+    height:80px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    color: white;
+    font-size: 10px;
+}
+#footer p {
+    margin-right: auto;
+    top: 20px;
+    left: 60px;
+    position: relative;
+}
+
+#footer p a{
+    text-decoration: none;
+    color: white;
+}
