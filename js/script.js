@@ -7,5 +7,7 @@ $(document).ready(function(){
             $(this).siblings().stop().fadeTo(500,1);
     });
 });
-    //$('.fancybox').fancybox();
+        $(".fancybox").fancybox();
 })
+
+    
