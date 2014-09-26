@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>CASEY BRY&#x25B3;N DOHERTY</title>
+    <title>PAINT | CASEY BRY&#x25B3;N DOHERTY</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" href="./js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
     <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
@@ -16,6 +16,7 @@
             <nav>
                 <ul id = "nav">
                     <li><a href = "index.html">Home</a></li>
+                    <li><a href = "about.html">About</a></li>
                     <li><a href = "paintings.html">Paintings</a></li>
                     <li><a href = "digitalArt.html">Digital Art</a></li>
                     <li><a href = "sketches.html">Sketches</a></li>
@@ -28,26 +29,32 @@
                 </ul>
             </nav>
         </div>
+        <div class = "search">
+            <form class = "formSearch" >Search Paintings: </br>
+                <input class = "input-text" id = "paintingSearch" type = "text" value = "hit enter to search">
+                <span id = "filter-count"></span>
+            </form>
+        </div>
         <div id = "paintingPageContent">
-            <div class="paintings">                
+            <div class="paintings" id = "doublejesus">                
                 <a href="./images/doublejesus.jpg" class = "fancybox" rel="gallery" title = "Double Jesus"><img src="./images/doublejesus.jpg" width="216" height="273" title="Double Jesus"/></a>        
             </div>
-            <div class="paintings" >              
+            <div class="paintings" id = "selfYell">              
                 <a href="./images/selfyell.jpg" class = "fancybox" rel="gallery" title = "Self Yell"><img src="./images/selfyell.jpg" width="212" height="267" title="Self Yell" /></a>
             </div> 
-            <div class="paintings" >              
+            <div class="paintings" id = "boylamb" >              
                 <a href="./images/boylamb.jpg" class = "fancybox" rel="gallery" title = "Boy Lamb"><img src="./images/boylamb.jpg" width="266" height="267" title="Boy Lamb" /></a>
             </div>
-            <div class="paintings" >              
+            <div class="paintings" id = "dogma">              
                 <a href="./images/dogma.jpg" class = "fancybox" rel="gallery" title = "Dogma"><img src="./images/dogma.jpg" width="200" height="255" title="Dogma" /></a>
             </div>
-            <div class="paintings" >              
+            <div class="paintings" "flesh">              
                 <a href="./images/flesh.jpg" class = "fancybox" rel="gallery" title = "Flesh"><img src="./images/flesh.jpg" width="201" height="260" title="Flesh" /></a>
             </div>
-            <div class="paintings" >              
+            <div class="paintings" "marybatman">              
                 <a href="./images/marybatman.jpg" class = "fancybox" rel="gallery" title = "Mary Batman"><img src="./images/marybatman.jpg" width="213" height="267" title="Mary Batman" /></a>
             </div>
-            <div class="paintings" >              
+            <div class="paintings" "marywithclouds">              
                 <a href="./images/marywclouds.jpg" class = "fancybox" rel="gallery" title = "Mary with Clouds"><img src="./images/marywclouds.jpg" width="267" height="266" title="Mary with Clouds"/></a>
             </div>
             <div class="paintings" >              
@@ -115,10 +122,7 @@
             </div>     
             <div class="paintings" >              
                 <a href="./images/Rabbit.jpg" class = "fancybox" rel="gallery" title = "Rabbit"><img src="./images/Rabbit.jpg" width="255" height="191" title="Rabbit" /></a>
-            </div>
-            <div class="paintings" >              
-                <a href="./images/Rather.jpg" class = "fancybox" rel="gallery" title = "Rather"><img src="./images/Rather.jpg" width="86" height="267" title="Rather" /></a>
-            </div>           
+            </div>       
             <div class="paintings" >              
                 <a href="./images/Roosters.jpg" class = "fancybox" rel="gallery" title = "Roosters"><img src="./images/Roosters.jpg" width="192" height="233" title="Roosters" /></a>
             </div>   
@@ -128,6 +132,9 @@
             <div class="paintings" >              
                 <a href="./images/Throne.jpg" class = "fancybox" rel="gallery" title = "Throne"><img src="./images/Throne.jpg" width="200" height="254" title="Throne" /></a>
             </div>                           
+        </div>
+        <div id = "footer">
+            <p><a href = "index.html">CASEYBRYANDOHERTY.COM</a> &#x25B3; 2014</p>
         </div>
     </div>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
