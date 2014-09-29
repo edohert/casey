@@ -34,22 +34,22 @@
             <form class = "formSearch" >Search Paintings: </br>
                 <input class = "input-text" id = "paintingSearch" type = "text" value = "">
                 <ul class = "rightNavBar">
-                <li><a href="#" data-rel = "all" class = "filter active">All</a></li>
-                <li><a href="#" data-rel = "Port" class = "filter">Portraits</a></li>
-                <li><a href="#" data-rel = "Reli" class = "filter">Religious</a></li>
-                <li><a href="#" data-rel = "Surreal" class = "filter">Surreali</a></li>
-            </ul>
+                    <li><a href="#" data-rel = "all" class = "filter active">All</a></li>
+                    <li><a href="#" data-rel = "Port" class = "filter" id = "#button">Portraits</a></li>
+                    <li><a href="#" data-rel = "Reli" class = "filter">Religious</a></li>
+                    <li><a href="#" data-rel = "Surreal" class = "filter">Surreali</a></li>
+                </ul>
             </form>
         </div>
         <div id = "paintingPageContent">
-            <span id="filter-count"></span>  </br>
-            <div class="paintings" id = "double jesus ">                
+            <span id="filter-count"></span></br>
+            <div class="paintings portrait" id = "double jesus" data-filter = "all">                
                 <a href="./images/doublejesus.jpg" class = "fancybox" rel="gallery" title = "Double Jesus"><img src="./images/doublejesus.jpg" width="216" height="273" title="Double Jesus"/></a>        
             </div> 
-            <div class="paintings" id = "self Yell ">              
+            <div class= "paintings" id = "self Yell ">              
                 <a href="./images/selfyell.jpg" class = "fancybox" rel="gallery" title = "Self Yell"><img src="./images/selfyell.jpg" width="212" height="267" title="Self Yell" /></a>
             </div> 
-            <div class="paintings" id = "boy lamb " >              
+            <div class= "paintings" id = "boy lamb " >              
                 <a href="./images/boylamb.jpg" class = "fancybox" rel="gallery" title = "Boy Lamb"><img src="./images/boylamb.jpg" width="266" height="267" title="Boy Lamb" /></a>
             </div>
             <div class="paintings" id = "dogma ">              
@@ -168,12 +168,11 @@
             </div>   
             <div class="paintings" id = "Throne ">              
                 <a href="./images/Throne.jpg" class = "fancybox" rel="gallery" title = "Throne"><img src="./images/Throne.jpg" width="200" height="254" title="Throne" /></a>
-            </div>
-        <span id="filter-count"></span>                            
+            </div>                         
         </div>
     </div>
     <div id = "footer">
-        <p class = "footerText"><a href = "index.html">CASEYBRYANDOHERTY.COM</a> &#x25B3; 2014</p>
+        <p class = "footerText"><a href = "index.html">CASEYBRYANDOHERTY.COM </a><span style="color:red">&#x25B3;</span> 2014</p>
         <p class = "socialMedia">
             <!-- Facebook -->
             <a href="http://www.facebook.com/sharer.php?u=http://www.caseybryandoherty.com" target="_blank"><img src="./images/socialBtns/facebook.png" alt="Facebook" /></a>
@@ -193,6 +192,7 @@
     <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
     <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
     <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <script src="./js/isotope-docs/isotope.pkgd.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>

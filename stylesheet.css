@@ -33,9 +33,19 @@ body:before {
 }
 
 .horizontalLine {
-    border-top: thin solid black;
+    border-top: thin solid gray;
     width: 100%;
     padding-bottom: 20px;
+}
+
+#profilePic{
+    float: left;
+}
+
+#aboutPageContent p{
+    margin-top: 30px;
+    float: right;
+    padding-right: 199px;
 }
 
 a {
@@ -82,6 +92,12 @@ nav li a:hover {
     padding-bottom: 80px; /* must be same height as the footer */
 }  
 
+h2{
+    font-family: "Trebuchet MS",  Helvetica, Arial, sans-serif;
+    color: #4f4f4f;
+    font-size: 16px;
+}
+
 #paintingPageContent{
     overflow:auto;
     padding-bottom: 80px; /* must be same height as the footer */
@@ -108,6 +124,15 @@ nav li a:hover {
 }
 
 #contactPageContent{    
+    font-family: "Trebuchet MS",  Helvetica, Arial, sans-serif;
+    color: #4f4f4f;
+    font-size: 12px;
+    overflow:auto;
+    text-decoration: none;
+    padding-bottom: 80px; /* must be same height as the footer */
+}
+
+#aboutPageContent{    
     font-family: "Trebuchet MS",  Helvetica, Arial, sans-serif;
     color: #4f4f4f;
     font-size: 12px;
@@ -165,6 +190,24 @@ nav li a:hover {
 .brandID{
     display: inline-block;
     padding: 0px 10px 10px 10px;
+}
+
+#slideshow { 
+    margin: auto; 
+    float: left;
+    position: relative; 
+    width: 640px; 
+    height: 240px; 
+    padding: 10px; 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    float: left;
+    top: 25px; 
+    left: 0px; 
+    right: 100px; 
+    bottom: 0px; 
 }
 
 #footer{

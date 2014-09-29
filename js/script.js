@@ -104,14 +104,23 @@ $(document).ready(function(){
         }
     });
 
-// isotope
-    var $wrapper = $("#wrapper");
+    // isotope BrandID
+//    var $brandIDPageContent = $("#brandIDPageContent");
     // init
-    $wrapper.isotope({
+//    $brandIDPageContent.isotope({
         // options
-        itemSelector: '.item',
-        layoutMode: 'fitRows'
-    });
+//        itemSelector: '.brandID',
+//        layoutMode: 
+ //   });
+
+// isotope Paintings
+//    var $paintingPageContent = $("#paintingPageContent");
+    // init
+//    $paintingPageContent.isotope({
+        // options
+//        itemSelector: '.paintings',
+ //       layoutMode: 'vertical' 
+//    });    
 
 //images outside hover fade
     $("#paintingPageContent, #digitalArtPageContent, #sketchesPageContent, #brandIDPageContent").children().hover(function() {
@@ -119,6 +128,18 @@ $(document).ready(function(){
     }, function() {
         $(this).siblings().stop().fadeTo(500,1);
         });
+
+//slideshow
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1500)
+    .next()
+    .fadeIn(1500)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
 
 })
 
