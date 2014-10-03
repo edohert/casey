@@ -234,6 +234,7 @@ $(document).ready(function(){
         $(this).attr("title", imgTitle);
     });
 
+    // adds image caption on over
     $("img.caption").captionjs({
         'class_name'      : 'captionjs', // Class name assigned to each <figure>
         'schema'          : true,        // Use schema.org markup (i.e., itemtype, itemprop)
@@ -254,7 +255,15 @@ $(document).ready(function(){
     $('#filters').on('click', 'button', function() {
     var filterValue = $(this).attr('data-filter');
     $paintingPageContent.isotope({ filter: filterValue });
+  });
+
+$('.button-group').each( function( i, buttonGroup ) {
+    var $buttonGroup = $( buttonGroup );
+    $buttonGroup.on( 'click', 'button', function() {
+      $buttonGroup.find('.is-checked').removeClass('is-checked');
+      $( this ).addClass('is-checked');
     });
+  });
   
 })
 
