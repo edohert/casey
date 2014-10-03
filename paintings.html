@@ -4,14 +4,14 @@
     <title>PAINT | CASEY BRY&#x25B3;N DOHERTY</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" href="./js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-    <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-    <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <link rel="stylesheet" href="./js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <link rel="stylesheet" href="./js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <link rel="stylesheet" href="./js/captionjs-master/captionjs.css" />
 </head>
 <body>
     <div id = "wrapper">
-        <h1 id = "heading"><a href = "index.html">CASEY BRY<span style="color:red">&#x25B3;</span>N DOHERTY</a></h1></br></br></br></br>
-        <div class="headerLine">
-        </div>
+        <h1 id = "heading"><a href = "index.html"><img src="./images/header.jpg" width="960" height="102"/></a>
+        </h1>
         <div id = "mainNavBar">
             <nav>
                 <ul id = "nav">
@@ -23,9 +23,9 @@
                     <li><a href = "3d.html">3D</a></li>
                     <li><a href = "brandIdentity.html">Brand Identity</a></li>
                     <li><a href = "videos.html">Videos</a></li>
-                    <li><a href = "https://www.facebook.com/CaseyBryanDoherty">Facebook</a></li>
-                    <li><a href = "http://instagram.com/dohertyb2?modal=true">Instagram</a></li>
-                    <li><a href = "https://www.facebook.com/electricdeltaband">Music</a></li>
+                    <li><a href = "https://www.facebook.com/CaseyBryanDoherty" target="_blank">Facebook</a></li>
+                    <li><a href = "http://instagram.com/dohertyb2?modal=true" target="_blank">Instagram</a></li>
+                    <li><a href = "https://www.facebook.com/electricdeltaband" target="_blank">Music</a></li>
                     <li><a href = "contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -33,142 +33,123 @@
         <div class = "search">
             <form class = "formSearch" >Search Paintings: </br>
                 <input class = "input-text" id = "paintingSearch" type = "text" value = "">
-                <ul class = "rightNavBar">
-                    <li><a href="#" data-rel = "all" class = "filter active">All</a></li>
-                    <li><a href="#" data-rel = "Port" class = "filter" id = "#button">Portraits</a></li>
-                    <li><a href="#" data-rel = "Reli" class = "filter">Religious</a></li>
-                    <li><a href="#" data-rel = "Surreal" class = "filter">Surreali</a></li>
-                </ul>
+                <div id = "filters" class = "button-group">
+                    <button class = "button" data-filter = '*'>All</button></br>
+                    <button class = "button" data-filter = '.portrait'>Portraits</button></br>
+                    <button class = "button" data-filter = '.religious'>Religious</button></br>
+                    <button class = "button" data-filter = '.surreal'>Surreal</button></br>
+                </div>
             </form>
         </div>
+        <h2>PAINTINGS</h2>   
+        <div class="headerLine"></div>
+        <span id="filter-count"></span></br>
         <div id = "paintingPageContent">
-            <span id="filter-count"></span></br>
-            <div class="paintings portrait" id = "double jesus" data-filter = "all">                
-                <a href="./images/doublejesus.jpg" class = "fancybox" rel="gallery" title = "Double Jesus"><img src="./images/doublejesus.jpg" width="216" height="273" title="Double Jesus"/></a>        
+            <div class="paintings portrait religious" id = "double jesus" data-filter = "all">                
+                <a href="./images/doublejesus.jpg" class = "fancybox" rel="gallery" title = "Double Jesus"><img src="./images/doublejesus.jpg" width="216" height="273" title="Double Jesus" class = "caption" alt="Double Jesus"/></a>
             </div> 
-            <div class= "paintings" id = "self Yell ">              
-                <a href="./images/selfyell.jpg" class = "fancybox" rel="gallery" title = "Self Yell"><img src="./images/selfyell.jpg" width="212" height="267" title="Self Yell" /></a>
+            <div class= "paintings portrait" id = "self Yell ">              
+                <a href="./images/selfyell.jpg" class = "fancybox" rel="gallery" title = "Self Yell"><img src="./images/selfyell.jpg" width="212" height="267" title="Self Yell" class = "caption" alt = "Self Yell"/></a>
             </div> 
             <div class= "paintings" id = "boy lamb " >              
-                <a href="./images/boylamb.jpg" class = "fancybox" rel="gallery" title = "Boy Lamb"><img src="./images/boylamb.jpg" width="266" height="267" title="Boy Lamb" /></a>
+                <a href="./images/boylamb.jpg" class = "fancybox" rel="gallery" title = "Boy Lamb"><img src="./images/boylamb.jpg" width="266" height="267" title="Boy Lamb" class = "caption" alt = "Boy Lamb"/></a>
             </div>
             <div class="paintings" id = "dogma ">              
-                <a href="./images/dogma.jpg" class = "fancybox" rel="gallery" title = "Dogma"><img src="./images/dogma.jpg" width="200" height="255" title="Dogma" /></a>
+                <a href="./images/dogma.jpg" class = "fancybox" rel="gallery" title = "Dogma"><img src="./images/dogma.jpg" width="200" height="255" title="Dogma" class = "caption" alt = "Dogma"/></a>
             </div>
             <div class="paintings" id = "flesh ">              
-                <a href="./images/flesh.jpg" class = "fancybox" rel="gallery" title = "Flesh"><img src="./images/flesh.jpg" width="201" height="260" title="Flesh" /></a>
+                <a href="./images/flesh.jpg" class = "fancybox" rel="gallery" title = "Flesh"><img src="./images/flesh.jpg" width="201" height="260" title="Flesh" class = "caption" alt = "Flesh"/></a>
             </div>
             <div class="paintings" id = "Jack Jay ">              
-                <a href="./images/jackjay.jpg" class = "fancybox" rel="gallery" title = "Jack Jay"><img src="./images/jackjay.jpg" width="233" height="270" title="Jack Jay" /></a>
+                <a href="./images/jackjay.jpg" class = "fancybox" rel="gallery" title = "Jack Jay"><img src="./images/jackjay.jpg" width="233" height="270" title="Jack Jay" class = "caption" alt = "Jack Jay"/></a>
             </div>
             <div class="paintings" id = "Steve ">              
-                <a href="./images/steve.jpg" class = "fancybox" rel="gallery" title = "Steve"><img src="./images/steve.jpg" width="233" height="297" title="Steve" /></a>
+                <a href="./images/steve.jpg" class = "fancybox" rel="gallery" title = "Steve"><img src="./images/steve.jpg" width="233" height="297" title="Steve" class = "caption" alt = "Steve"/></a>
             </div>
             <div class="paintings" id = "#yolo ">              
-                <a href="./images/yolo.jpg" class = "fancybox" rel="gallery" title = "#Yolo"><img src="./images/yolo.jpg" width="137" height="350" title="#Yolo" /></a>
+                <a href="./images/yolo.jpg" class = "fancybox" rel="gallery" title = "#Yolo"><img src="./images/yolo.jpg" width="137" height="350" title="#Yolo" class = "caption" alt = "#Yolo"/></a>
             </div>
             <div class="paintings" id = "Twon ">              
-                <a href="./images/Twon.jpg" class = "fancybox" rel="gallery" title = "Twon"><img src="./images/Twon.jpg" width="123" height="370" title="Twon" /></a>
+                <a href="./images/Twon.jpg" class = "fancybox" rel="gallery" title = "Twon"><img src="./images/Twon.jpg" width="123" height="370" title="Twon" class = "caption" alt = "Twon"/></a>
             </div>
             <div class="paintings" id = "The Cowboy ">              
-                <a href="./images/cowboy.jpg" class = "fancybox" rel="gallery" title = "The Cowboy"><img src="./images/cowboy.jpg" width="153" height="375" title="The Cowboy" /></a>
+                <a href="./images/cowboy.jpg" class = "fancybox" rel="gallery" title = "The Cowboy"><img src="./images/cowboy.jpg" width="153" height="375" title="The Cowboy" class = "caption" alt = "The Cowboy"/></a>
             </div>
             <div class="paintings" id = "The Swan ">              
-                <a href="./images/swan.jpg" class = "fancybox" rel="gallery" title = "The Swan"><img src="./images/swan.jpg" width="317" height="246" title="The Swan" /></a>
+                <a href="./images/swan.jpg" class = "fancybox" rel="gallery" title = "The Swan"><img src="./images/swan.jpg" width="317" height="246" title="The Swan" class = "caption" alt = "The Swan"/></a>
             </div>
             <div class="paintings" id = "Chix ">              
-                <a href="./images/chix.jpg" class = "fancybox" rel="gallery" title = "Chix"><img src="./images/Chix.jpg" width="320" height="171" title="Chix" /></a>
+                <a href="./images/chix.jpg" class = "fancybox" rel="gallery" title = "Chix"><img src="./images/Chix.jpg" width="320" height="171" title="Chix" class = "caption" alt = "Chix"/></a>
             </div>
             <div class="paintings" id = "Father and Son ">              
-                <a href="./images/fatherson.jpg" class = "fancybox" rel="gallery" title = "Father and Son"><img src="./images/fatherson.jpg" width="204" height="204" title="Father and Son" /></a>
+                <a href="./images/fatherson.jpg" class = "fancybox" rel="gallery" title = "Father and Son"><img src="./images/fatherson.jpg" width="204" height="204" title="Father and Son" class = "caption" alt = "Father and Son"/></a>
             </div>
             <div class="paintings" id = "Connie and her Cats ">              
-                <a href="./images/connie.jpg" class = "fancybox" rel="gallery" title = "Connie and her Cats"><img src="./images/connie.jpg" width="212" height="320" title="Connie and her Cats" /></a>
+                <a href="./images/connie.jpg" class = "fancybox" rel="gallery" title = "Connie and her Cats"><img src="./images/connie.jpg" width="212" height="320" title="Connie and her Cats" class = "caption" alt = "Connie and her Cats"/></a>
             </div>
             <div class="paintings" id = "mary batman ">              
-                <a href="./images/marybatman.jpg" class = "fancybox" rel="gallery" title = "Mary Batman"><img src="./images/marybatman.jpg" width="213" height="267" title="Mary Batman" /></a>
+                <a href="./images/marywithbatman.jpg" class = "fancybox" rel="gallery" title = "Mary Batman"><img src="./images/marywithbatman.jpg" width="233" height="287" title="Mary Batman" class = "caption" alt = "Mary Batman"/></a>
             </div>
             <div class="paintings" id = "mary with clouds ">              
-                <a href="./images/marywclouds.jpg" class = "fancybox" rel="gallery" title = "Mary with Clouds"><img src="./images/marywclouds.jpg" width="267" height="266" title="Mary with Clouds"/></a>
+                <a href="./images/marywclouds.jpg" class = "fancybox" rel="gallery" title = "Mary with Clouds"><img src="./images/marywclouds.jpg" width="267" height="266" title="Mary with Clouds" class = "caption" alt = "Mary with Clouds"/></a>
             </div>
             <div class="paintings" id = "olympia ">              
-                <a href="./images/oly.jpg" class = "fancybox" rel="gallery" title = "Olympia"><img src="./images/oly.jpg" width="300" height="226" title="Olympia" /></a>
+                <a href="./images/oly.jpg" class = "fancybox" rel="gallery" title = "Olympia"><img src="./images/oly.jpg" width="340" height="266" title="Olympia" class = "caption" alt = "Olympia"/></a>
             </div>     
             <div class="paintings" id = "Peewee ">              
-                <a href="./images/peewee.jpg" class = "fancybox" rel="gallery" title = "Peewee"><img src="./images/peewee.jpg" width="187" height="250" title="Peewee" /></a>
+                <a href="./images/peewee.jpg" class = "fancybox" rel="gallery" title = "Peewee"><img src="./images/peewee.jpg" width="187" height="250" title="Peewee" class = "caption" alt = "Peewee"/></a>
             </div> 
-            <div class="paintings" id = "Pig ">              
-                <a href="./images/pig.jpg" class = "fancybox" rel="gallery" title = "Pig"><img src="./images/pig.jpg" width="197" height="267" title="Pig" /></a>
+            <div class="paintings" id = "Pigpainting ">              
+                <a href="./images/PigPainting.jpg" class = "fancybox" rel="gallery" title = "PigP ainting"><img src="./images/PigPainting.jpg" width="197" height="267" title="Pig Painting" class = "caption" alt = "Pig Painting"/></a>
             </div>
             <div class="paintings" id = "Gallons ">              
-                <a href="./images/Gallons.jpg" class = "fancybox" rel="gallery" title = "Gallons"><img src="./images/Gallons.jpg" width="197" height="250" title="Gallons" /></a>
+                <a href="./images/Gallons.jpg" class = "fancybox" rel="gallery" title = "Gallons"><img src="./images/Gallons.jpg" width="197" height="250" title="Gallons" class = "caption" alt = "Gallons"/></a>
             </div>
             <div class="paintings" id = "Ducks in Row ">              
-                <a href="./images/Ducks.jpg" class = "fancybox" rel="gallery" title = "Ducks"><img src="./images/Ducks.jpg" width="390" height="233" title="Ducks" /></a>
+                <a href="./images/Ducks.jpg" class = "fancybox" rel="gallery" title = "Ducks"><img src="./images/Ducks.jpg" width="390" height="233" title="Ducks" class = "caption" alt = "Ducks in a Row"/></a>
             </div>  
             <div class="paintings" id = "Shoshy ">              
-                <a href="./images/shoshy.jpg" class = "fancybox" rel="gallery" title = "Shoshy"><img src="./images/shoshy.jpg" width="210" height="267" title="Shoshy" /></a>
+                <a href="./images/shoshy.jpg" class = "fancybox" rel="gallery" title = "Shoshy"><img src="./images/shoshy.jpg" width="210" height="267" title="Shoshy" class = "caption" alt = "Shoshy"/></a>
             </div>
             <div class="paintings" id = "Under the Sea ">              
-                <a href="./images/underthesea.jpg" class = "fancybox" rel="gallery" title = "Under the Sea"><img src="./images/underthesea.jpg" width="317" height="238" title="Under the Sea" /></a>
-            </div>   
-            <div class="paintings" id = "babydoll ">              
-                <a href="./images/babydoll1.jpg" class = "fancybox" rel="gallery" title = "Baby Doll #1"><img src="./images/babydoll1.jpg" width="187" height="252" title="Baby Doll #1" /></a>
-            </div> 
-            <div class="paintings" id = "babydoll ">              
-                <a href="./images/babdoll2.jpg" class = "fancybox" rel="gallery" title = "Baby Doll #2"><img src="./images/babdoll2.jpg" width="190" height="255" title="Baby Doll #2" /></a>
-            </div>  
-            <div class="paintings" id = "babydoll ">              
-                <a href="./images/babdoll3.jpg" class = "fancybox" rel="gallery" title = "Baby Doll #3"><img src="./images/babdoll3.jpg" width="187" height="252" title="Baby Doll #3" /></a>
-            </div>   
-            <div class="paintings" id = "babydoll ">              
-                <a href="./images/babydoll4.jpg" class = "fancybox" rel="gallery" title = "Baby Doll #4"><img src="./images/babydoll4.jpg" width="190" height="255" title="Baby Doll #4" /></a>
-            </div>  
+                <a href="./images/underthesea.jpg" class = "fancybox" rel="gallery" title = "Under the Sea"><img src="./images/underthesea.jpg" width="317" height="238" title="Under the Sea" class = "caption" alt = "Under the Sea"/></a>
+            </div>    
             <div class="paintings" id = "Work ">              
-                <a href="./images/work.jpg" class = "fancybox" rel="gallery" title = "Work"><img src="./images/work.jpg" width="255" height="255" title="Work" /></a>
+                <a href="./images/work.jpg" class = "fancybox" rel="gallery" title = "Work"><img src="./images/work.jpg" width="295" height="231" title="Work" class = "caption" alt = "Work"/></a>
             </div>  
-            <div class="paintings" id = "Birth ">              
-                <a href="./images/Birth.jpg" class = "fancybox" rel="gallery" title = "Birth"><img src="./images/Birth.jpg" width="205" height="255" title="Birth" /></a>
-            </div>
             <div class="paintings" id = "Bodhi ">              
-                <a href="./images/Bodhi.jpg" class = "fancybox" rel="gallery" title = "Bodhi"><img src="./images/Bodhi.jpg" width="255" height="202" title="Bodhi" /></a>
+                <a href="./images/Bodhi.jpg" class = "fancybox" rel="gallery" title = "Bodhi"><img src="./images/Bodhi.jpg" width="255" height="202" title="Bodhi" class = "caption" alt = "Bodhi"/></a>
             </div>
             <div class="paintings" id = "Cake ">              
-                <a href="./images/Cake.jpg" class = "fancybox" rel="gallery" title = "Cake"><img src="./images/Cake.jpg" width="198" height="250" title="Cake" /></a>
+                <a href="./images/Cake.jpg" class = "fancybox" rel="gallery" title = "Cake"><img src="./images/Cake.jpg" width="198" height="250" title="Cake" class = "caption" alt = "Cake"/></a>
             </div>  
             <div class="paintings" id = "Girl ">              
-                <a href="./images/Girl.jpg" class = "fancybox" rel="gallery" title = "Girl"><img src="./images/Girl.jpg" width="264" height="241" title="Girl" /></a>
+                <a href="./images/Girl.jpg" class = "fancybox" rel="gallery" title = "Girl"><img src="./images/Girl.jpg" width="264" height="241" title="Girl" class = "caption" alt = "Girl"/></a>
             </div>     
             <div class="paintings" id = "Hamms ">              
-                <a href="./images/Hamms.jpg" class = "fancybox" rel="gallery" title = "Hamms"><img src="./images/Hamms.jpg" width="250" height="246" title="Hamms" /></a>
+                <a href="./images/Hamms.jpg" class = "fancybox" rel="gallery" title = "Hamms"><img src="./images/Hamms.jpg" width="250" height="246" title="Hamms" class = "caption" alt = "Hamms"/></a>
             </div>     
             <div class="paintings" id = "Hangover ">              
-                <a href="./images/Hangover.jpg" class = "fancybox" rel="gallery" title = "Hangover"><img src="./images/Hangover.jpg" width="170" height="255" title="Hangover" /></a>
+                <a href="./images/Hangover.jpg" class = "fancybox" rel="gallery" title = "Hangover"><img src="./images/Hangover.jpg" width="170" height="255" title="Hangover" class = "caption" alt = "Hangover"/></a>
             </div>     
             <div class="paintings" id = "Icecream ">              
-                <a href="./images/Icecream.jpg" class = "fancybox" rel="gallery" title = "Icecream"><img src="./images/Icecream.jpg" width="300" height="235" title="Icecream" /></a>
+                <a href="./images/Icecream.jpg" class = "fancybox" rel="gallery" title = "Icecream"><img src="./images/Icecream.jpg" width="300" height="235" title="Icecream" class = "caption" alt = "Icecream"/></a>
             </div>        
             <div class="paintings" id = "Leo ">              
-                <a href="./images/Leo.jpg" class = "fancybox" rel="gallery" title = "Leo"><img src="./images/Leo.jpg" width="192" height="257" title="Leo" /></a>
+                <a href="./images/Leo.jpg" class = "fancybox" rel="gallery" title = "Leo"><img src="./images/Leo.jpg" width="192" height="257" title="Leo" class = "caption" alt = "Leo"/></a>
             </div>  
             <div class="paintings" id = "Models ">              
-                <a href="./images/Models.jpg" class = "fancybox" rel="gallery" title = "Models"><img src="./images/Models.jpg" width="255" height="204" title="Models" /></a>
+                <a href="./images/Models.jpg" class = "fancybox" rel="gallery" title = "Models"><img src="./images/Models.jpg" width="255" height="204" title="Models" class = "caption" alt = "Models"/></a>
             </div>     
-            <div class="paintings" id = "Pigeon ">              
-                <a href="./images/Pidgenhead.jpg" class = "fancybox" rel="gallery" title = "Pigeon head"><img src="./images/Pidgenhead.jpg" width="171" height="255" title="Pigeon head" /></a>
+            <div class="paintings" id = "Spiderman with Lady">              
+                <a href="./images/spidermanandlady.jpg" class = "fancybox" rel="gallery" title = "Spiderman with Lady"><img src="./images/spidermanandlady.jpg" width="189" height="283" title="Spiderman with Lady" class = "caption" alt = "Spiderman with Lady"/></a>
             </div>     
             <div class="paintings" id = "Rabbit ">              
-                <a href="./images/Rabbit.jpg" class = "fancybox" rel="gallery" title = "Rabbit"><img src="./images/Rabbit.jpg" width="255" height="191" title="Rabbit" /></a>
+                <a href="./images/Rabbit.jpg" class = "fancybox" rel="gallery" title = "Rabbit"><img src="./images/Rabbit.jpg" width="255" height="191" title="Rabbit" class = "caption" alt = "Rabbit"/></a>
             </div>       
             <div class="paintings" id = "Roosters ">              
-                <a href="./images/Roosters.jpg" class = "fancybox" rel="gallery" title = "Roosters"><img src="./images/Roosters.jpg" width="192" height="233" title="Roosters" /></a>
-            </div>   
-            <div class="paintings" id = "Sea " >              
-                <a href="./images/Sea.jpg" class = "fancybox" rel="gallery" title = "Sea"><img src="./images/Sea.jpg" width="171" height="233" title="Sea" /></a>
-            </div>   
-            <div class="paintings" id = "Throne ">              
-                <a href="./images/Throne.jpg" class = "fancybox" rel="gallery" title = "Throne"><img src="./images/Throne.jpg" width="200" height="254" title="Throne" /></a>
-            </div>                         
+                <a href="./images/Roosters.jpg" class = "fancybox" rel="gallery" title = "Roosters"><img src="./images/Roosters.jpg" width="192" height="233" title="Roosters" class = "caption" alt = "Roosters"/></a>
+            </div>                            
         </div>
     </div>
     <div id = "footer">
@@ -188,10 +169,11 @@
     </div>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="./js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-    <script type="text/javascript" src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
-    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
-    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <script type="text/javascript" src="./js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="./js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="./js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <script type="text/javascript" src="./js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <script type="text/javascript" src="./js/captionjs-master/jquery.caption.js"></script>
     <script src="./js/isotope-docs/isotope.pkgd.min.js"></script>
     <script src="./js/script.js"></script>
 </body>

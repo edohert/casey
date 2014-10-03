@@ -15,7 +15,7 @@ body:before {
 
 #wrapper {
     min-height: 100%;
-    font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     width: 960px;
     margin-right: auto;
     margin-left: auto;
@@ -27,15 +27,14 @@ body:before {
 }
 
 .headerLine {
-    border-top: thin solid black;
+    border-top: thin solid gray;
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 
 .horizontalLine {
     border-top: thin solid gray;
     width: 100%;
-    padding-bottom: 20px;
 }
 
 #profilePic{
@@ -46,6 +45,12 @@ body:before {
     margin-top: 30px;
     float: right;
     padding-right: 199px;
+}
+
+#contactPageContent p{
+    position: relative;
+    margin-top: 30px;
+    left: 30px;
 }
 
 a {
@@ -61,30 +66,29 @@ a {
     list-style-type: none;
     display:table;
     width: 90%;
-    margin-left: -45px
+    margin-left: -45px;
 }
 
 nav li {
     display: inline;
-    display:table-cell;
-    height:30px;   
+    display:table-cell;  
     padding: 0px 10px;
     text-align: center;
-    text-transform: uppercase;
-    font-size: 12px
+    text-transform: lowercase;
+    font-size: 13px
 }
 
 nav li a{
-    color: #B8B8B8;
+    color: #5A5A5A;
 }
 
 nav li a:visited {
     text-decoration: none;
-    color: #B8B8B8
+    color: #5A5A5A;
 }
 nav li a:hover {
     text-decoration: none;
-    color: #4f4f4f;
+    color: #B8B8B8
 }
 
 #indexPageContent{
@@ -92,11 +96,30 @@ nav li a:hover {
     padding-bottom: 80px; /* must be same height as the footer */
 }  
 
+#slideshow { 
+    margin: auto; 
+    display: inline-block;
+    width: 960px; 
+    height: 500px; 
+
+}
+
+#slideshow > div { 
+    display: inline-block; 
+    float: left;
+
+}
+
 h2{
-    font-family: "Trebuchet MS",  Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     color: #4f4f4f;
     font-size: 16px;
 }
+
+#vidoePageContent{
+    overflow:auto;
+    padding-bottom: 80px; /* must be same height as the footer */
+}  
 
 #paintingPageContent{
     overflow:auto;
@@ -124,7 +147,7 @@ h2{
 }
 
 #contactPageContent{    
-    font-family: "Trebuchet MS",  Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     color: #4f4f4f;
     font-size: 12px;
     overflow:auto;
@@ -133,7 +156,16 @@ h2{
 }
 
 #aboutPageContent{    
-    font-family: "Trebuchet MS",  Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #4f4f4f;
+    font-size: 12px;
+    overflow:auto;
+    text-decoration: none;
+    padding-bottom: 80px; /* must be same height as the footer */
+}
+
+#videoPageContent{    
+    font-family: Helvetica, Arial, sans-serif;
     color: #4f4f4f;
     font-size: 12px;
     overflow:auto;
@@ -147,6 +179,8 @@ h2{
 }
 
 .search {
+    position: relative;
+    top: 100px;
     float: right;
     margin-right: -50px;
 }
@@ -169,73 +203,108 @@ h2{
 
 .paintings{
     display: inline-block;
-    padding: 0px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 .digitalArt{
     display: inline-block;
-    padding: 0px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 .sketches{
     display: inline-block;
-    padding: 0px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 .threeD{
     display: inline-block;
-    padding: 0px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 .brandID{
     display: inline-block;
-    padding: 0px 10px 10px 10px;
-}
-
-#slideshow { 
-    margin: auto; 
-    float: left;
-    position: relative; 
-    width: 640px; 
-    height: 240px; 
-    padding: 10px; 
-}
-
-#slideshow > div { 
-    position: absolute; 
-    float: left;
-    top: 25px; 
-    left: 0px; 
-    right: 100px; 
-    bottom: 0px; 
+    padding: 10px 10px 10px 10px;
 }
 
 #footer{
     background-color:#B8B8B8;
     width:100%;
     position: relative;
-    color: white;
+    color: #4f4f4f;
     font-size: 10px;
     margin-top: -80px; /* negative value of footer height */
     height: 80px;
     clear:both;
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     text-align: center;
 }
 
 .footerText {
-    color: white;
+    color: #4f4f4f;
     padding-top: 15px;
 }
 
 #footer p a{
     text-decoration: none;
-    color: white;
+    color: #4f4f4f;
 }
 
 .socialMedia a {
     padding: 10px;
 }
+
+.captionjs, .captionjs figcaption {
+            margin: 0 0 0px;
+
+        }
+        .captionjs figcaption {
+            font-size: 12px;
+            line-height: 1.5;
+            padding: 10px 10px;
+            border: 1px solid #ddd;
+            border-top: none;
+            background-color: #eee;
+        }
+        .captionjs.stacked figcaption {
+            background-color: rgba(0, 0, 0, 0.35);
+            border: none;
+        }
+        .captionjs.animated figcaption {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+        }
+        .captionjs.hide figcaption {
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            background-color: rgba(0, 0, 0, 0.75);
+            color: #fff;
+            border: none;
+        }
+
+.paintings:hover {
+    opacity: 0.9;
+}
+
+.digitalArt:hover {
+    opacity: 0.9;
+}
+
+.sketches:hover {
+    opacity: 0.9;
+}
+
+.brandID:hover {
+    opacity: 0.9;
+}
+
+.threeD:hover {
+    opacity: 0.9;
+}
+
+.video:hover {
+    opacity: 0.9;
+}
+
 
 <!--[if !IE 7]>
     <style type="text/css">

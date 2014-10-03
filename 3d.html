@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>SKETCH | CASEY BRY&#x25B3;N DOHERTY</title>
+    <title>3D | CASEY BRY&#x25B3;N DOHERTY</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" href="./js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-    <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-    <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <link rel="stylesheet" href="./js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <link rel="stylesheet" href="./js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <link rel="stylesheet" href="./js/captionjs-master/captionjs.css" />
 </head>
 <body>
     <div id = "wrapper">
-        <h1 id = "heading"><a href = "index.html">CASEY BRY<span style="color:red">&#x25B3;</span>N DOHERTY</a></h1></br></br></br></br>
-        <div class="headerLine">
-        </div>
+        <h1 id = "heading"><a href = "index.html"><img src="./images/header.jpg" width="960" height="102"/></a>
+        </h1>
         <div id = "mainNavBar">
             <nav>
                 <ul id = "nav">
@@ -23,24 +23,27 @@
                     <li><a href = "3d.html">3D</a></li>
                     <li><a href = "brandIdentity.html">Brand Identity</a></li>
                     <li><a href = "videos.html">Videos</a></li>
-                    <li><a href = "https://www.facebook.com/CaseyBryanDoherty">Facebook</a></li>
-                    <li><a href = "http://instagram.com/dohertyb2?modal=true">Instagram</a></li>
-                    <li><a href = "https://www.facebook.com/electricdeltaband">Music</a></li>
+                    <li><a href = "https://www.facebook.com/CaseyBryanDoherty" target="_blank">Facebook</a></li>
+                    <li><a href = "http://instagram.com/dohertyb2?modal=true" target="_blank">Instagram</a></li>
+                    <li><a href = "https://www.facebook.com/electricdeltaband" target="_blank">Music</a></li>
                     <li><a href = "contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
         <div class = "search">
             <form class = "formSearch" >Search 3D: </br>
-                <input class = "input-text" id = "3dSearch" type = "text" value = "">
+                <input class = "input-text" id = "threeDSearch" type = "text" value = "">
             </form>
         </div>
         <div id = "threeDPageContent">
+            <h2>3D</h2>    
+            <div class="headerLine"></div>
+            <span id="filter-count"></span></br>
             <div class= "threeD" id = "Pig">                             
-                <a href="./images/Pig3d.jpg" class = "fancybox" rel="gallery" title = "Pig"><img src="./images/Pig3d.jpg" width="408" height="158" title="Pig" /></a>       
+                <a href="./images/Pig.jpg" class = "fancybox" rel="gallery" title = "Pig"><img src="./images/Pig.jpg" width="350" height="188" title="Pig" class = "caption" alt = "Pig"/></a>       
             </div>
             <div class= "threeD" id = "Skull">                             
-                <a href="./images/Skull.jpg" class = "fancybox" rel="gallery" title = "Skull"><img src="./images/Skull.jpg" width="154" height="233" title="Skull" /></a>
+                <a href="./images/Skull.jpg" class = "fancybox" rel="gallery" title = "Skull"><img src="./images/Skull.jpg" width="154" height="233" title="Skull" class = "caption" alt = "Skull"/></a>
             </div>
         </div>
     </div>
@@ -48,7 +51,7 @@
             <p class = "footerText"><a href = "index.html">CASEYBRYANDOHERTY.COM </a><span style="color:red">&#x25B3;</span> 2014</p>
             <p class = "socialMedia">
                 <!-- Facebook -->
-                <a href="http://www.facebook.com/sharer.php?u=http://www.caseybryandoherty.com" target="_blank"><img src="./images/socialBtns/facebook.png" alt="Facebook" /></a>
+                <a href="http://www.facebook.com/sharer.php?u=http://www.caseybryandoherty.com" target="_blank"><img src="./images/socialBtns/facebook.png" alt="Facebook"/></a>
                 <!-- Twitter -->
                 <a href="http://twitter.com/share?url=http://www.caseybryandoherty.com" target="_blank"><img src="./images/socialBtns/twitter.png" alt="Twitter" /></a>
                 <!-- Google+ -->
@@ -61,10 +64,11 @@
     </div>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="./js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-    <script type="text/javascript" src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
-    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
-    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <script type="text/javascript" src="./js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="./js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="./js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <script type="text/javascript" src="./js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <script type="text/javascript" src="./js/captionjs-master/jquery.caption.js"></script>
     <script src="./js/isotope-docs/isotope.pkgd.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
