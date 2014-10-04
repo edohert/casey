@@ -31,45 +31,50 @@
             </nav>
         </div>
         <div class="search">
-            <form class="formSearch" >Search Sketches: </br>
-                <input class="input-text" id="sketchSearch" type="text" value="">
+            <form class="formSearch">Search Sketches: </br>
+                <input class="input-text" id="sketchesSearch" type="text" value="">
+                <div id="filters" class="button-group">
+                    <button class="button is-checked" data-filter='*'>All</button></br>
+                    <button class="button" data-filter='.portrait'>Portrait</button></br>
+                    <button class="button" data-filter='.religious'>Religious</button></br>
+                    <button class="button" data-filter='.random'>Random Shizzz</button></br>
+                </div>
             </form>
         </div>
+        <h2>SKETCHES</h2>   
+        <div class="headerLine"></div>
         <div id="sketchesPageContent">
-            <h2>SKETCHES</h2>   
-            <div class="headerLine"></div>
-            <span id="filter-count"></span></br>
-            <div class="sketches" id="cowboyLover">                             
+            <div class="sketches random" id="cowboyLover">                             
                 <a href="./images/CowboyLover.jpg" class="fancybox" rel="gallery" title="Cowboy Lover"><img src="./images/CowboyLover.jpg" width="198" height="259" title="Cowboy Lover" class="caption" alt="Cowboy Lover"/></a>    
             </div>
-            <div class="sketches" id="Narwhale">                             
+            <div class="sketches random" id="Narwhale">                             
                 <a href="./images/narwhale.jpg" class="fancybox" rel="gallery" title="Narwhale"><img src="./images/Narwhale.jpg" width="234" height="248" title="Narwhale" class="caption" alt="Narwhale"/></a>       
             </div>
-            <div class="sketches" id="Cowboy">                             
+            <div class="sketches portrait" id="Cowboy">                             
                 <a href="./images/Cowboysketch.jpg" class="fancybox" rel="gallery" title="Cowboy"><img src="./images/Cowboysketch.jpg" width="263" height="263" title="Cowboy" class="caption" alt="Cowboy"/></a>       
             </div>
-            <div class="sketches" id="Loverz">                             
+            <div class="sketches random" id="Loverz">                             
                 <a href="./images/Loverz.jpg" class="fancybox" rel="gallery" title="Loverz"><img src="./images/Loverz.jpg" width="224" height="224" title="Loverz" class="caption" alt="Loverz"/></a>       
             </div>
-            <div class="sketches" id="selfieWhileDrinking">                             
+            <div class="sketches portrait" id="selfieWhileDrinking">                             
                 <a href="./images/SelfieDrinking.jpg" class="fancybox" rel="gallery" title="Selfie When Drinking"><img src="./images/SelfieDrinking.jpg" width="196" height="242" title="Selfie When Drinking" class="caption" alt="Selfie when Drinking"/></a>       
             </div>
-            <div class="sketches" id="booJays">                             
+            <div class="sketches random" id="booJays">                             
                 <a href="./images/BooJays.jpg" class="fancybox" rel="gallery" title="Boo Jays"><img src="./images/BooJays.jpg" width="270" height="223" title="Boo Jays" class="caption" alt="Boo Jays"/></a>       
             </div>
-            <div class="sketches" id="Sketch">                             
+            <div class="sketches random" id="Sketch">                             
                 <a href="./images/Sketch.jpg" class="fancybox" rel="gallery" title="Sketch"><img src="./images/Sketch.jpg" width="244" height="197" title="Sketch" class="caption" alt="Sketch"/></a>       
             </div>
-            <div class="sketches" id="Chicken">              
+            <div class="sketches random" id="Chicken">              
                 <a href="./images/Chicken.jpg" class="fancybox" rel="gallery" title="Chicken"><img src="./images/Chicken.jpg" width="255" height="201" title="Chicken" class="caption" alt="Chicken"/></a>
             </div>  
-            <div class="sketches" id="Peach">              
+            <div class="sketches religious" id="Peach">              
                 <a href="./images/peach.jpg" class="fancybox" rel="gallery" title="Peach"><img src="./images/peach.jpg" width="213" height="255" title="Peach" class="caption" alt="Peach"/></a>
             </div> 
-            <div class="sketches" id="Apple">              
+            <div class="sketches religious" id="Apple">              
                 <a href="./images/apple.jpg" class="fancybox" rel="gallery" title="Apple"><img src="./images/apple.jpg" width="275" height="214" title="Apple" class="caption" alt="Apple"/></a>
             </div>
-            <div class="sketches" id="motherMary">              
+            <div class="sketches religious" id="motherMary">              
                 <a href="./images/marydrawing.jpg" class="fancybox" rel="gallery" title="Mother Mary"><img src="./images/marydrawing.jpg" width="275" height="214" title="Mother Mary" class="caption" alt="Mother Mary"/></a>
             </div>
         </div>
@@ -96,7 +101,8 @@
     <script type="text/javascript" src="./js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
     <script type="text/javascript" src="./js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
     <script type="text/javascript" src="./js/captionjs-master/jquery.caption.js"></script>
-    <script src="./js/isotope-docs/layout-modes/isotope.pkgd.min.js"></script>
+    <script src="./js/isotope-docs/isotope.pkgd.min.js"></script>
+    <script src="./js/sketches.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
