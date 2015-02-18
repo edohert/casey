@@ -15,13 +15,15 @@ body:before {
 
 #wrapper {
     min-height: 100%;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Garamond; serif;
     width: 960px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: -25px;
 }
 
 #heading {
+    margin-bottom: -5px;
     float: left;
     color: black;
 }
@@ -64,31 +66,32 @@ a {
 
 #nav {
     list-style-type: none;
-    display:table;
-    width: 90%;
-    margin-left: -45px;
+    display: table;
+    width: 100%;
+    margin-left: -25px;
+    text-transform: uppercase;
 }
 
 nav li {
     display: inline;
-    display:table-cell;  
+    display: table-cell;  
     padding: 0px 10px 10px 0px;
-    text-align: center;
-    text-transform: lowercase;
-    font-size: 13px
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 13px;
 }
 
 nav li a{
-    color: #5A5A5A;
+    color: #B2B2B2;
 }
 
 nav li a:visited {
     text-decoration: none;
-    color: #5A5A5A;
+    color: #B2B2B2;
 }
 nav li a:hover {
     text-decoration: none;
-    color: #B8B8B8;
+    color: #595959;
 }
 
 #indexPageContent{
@@ -101,6 +104,7 @@ nav li a:hover {
     display: inline-block;
     width: 960px; 
     height: 500px; 
+    margin-top: 15px;
 
 }
 
@@ -111,7 +115,7 @@ nav li a:hover {
 }
 
 h2{
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Garamond; serif;
     color: #4f4f4f;
     font-size: 16px;
 }
@@ -147,21 +151,25 @@ h2{
 }
 
 #contactPageContent{    
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Garamond; serif;
     color: #4f4f4f;
-    font-size: 12px;
+    font-size: 14px;
     overflow:auto;
     text-decoration: none;
     padding-bottom: 80px; /* must be same height as the footer */
 }
 
 #aboutPageContent{    
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Garamond; serif;
     color: #4f4f4f;
-    font-size: 12px;
+    font-size: 14px;
     overflow:auto;
     text-decoration: none;
     padding-bottom: 80px; /* must be same height as the footer */
+}
+
+#aboutPageContent h2 {
+    color: #5A5A5A;
 }
 
 .about{
@@ -171,7 +179,7 @@ h2{
 }
 
 #videoPageContent{    
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Garamond; serif;
     color: #4f4f4f;
     font-size: 12px;
     overflow:auto;
@@ -199,7 +207,7 @@ h2{
 }
 
 .formSearch {
-    font-size: 12px;
+    font-size: 13px;
     color: #4f4f4f;
 }
 
@@ -241,7 +249,7 @@ h2{
     margin-top: -80px; /* negative value of footer height */
     height: 80px;
     clear:both;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Garamond; serif;
     text-align: center;
 }
 
@@ -259,12 +267,16 @@ h2{
     padding: 10px;
 }
 
+.socialMedia:hover a{
+    opacity: 0.7;
+}
+
 .captionjs, .captionjs figcaption {
             margin: 0 0 0px;
 
         }
         .captionjs figcaption {
-            font-size: 12px;
+            font-size: 13px;
             line-height: 1.5;
             padding: 10px 10px;
             border: 1px solid #ddd;
@@ -319,8 +331,8 @@ h2{
   border: none;
   border-radius: 1px;
   color: #4f4f4f;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-family: Garamond; serif;
+  font-size: 13px;
   cursor: pointer;
 }
 
